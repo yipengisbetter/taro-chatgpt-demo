@@ -1,0 +1,164 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 40px;
+  border-bottom: 2px solid #dedede;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  .title {
+    text-align: center;
+    .text {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .num {
+      font-size: 28px;
+    }
+  }
+  .btn {
+    border: 2px solid #dedede;
+    border-radius: 20px;
+    padding: 32px;
+    .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.message-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  border-top: 2px solid #dedede;
+  background-color: #fff;
+  .input-container {
+    display: flex;
+    padding: 20px 28px;
+    border-radius: 20px;
+    border: 2px solid #dedede;
+    .send-btn {
+      background-color: #1d93ab;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+      .txt {
+        color: #fff;
+        margin-left: 20px;
+      }
+    }
+  }
+  .text-input {
+    flex-grow: 1;
+    margin-right: 28px;
+  }
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 200px 40px 240px;
+  .message {
+    border: 2px solid #dedede;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rbga(0, 0, 0, .05);
+    margin-bottom: 20px;
+    &.user {
+      align-self: flex-end;
+      background-color: #e7f8ff;
+    }
+    &.txt {
+
+    }
+  }
+}
+.markdown {
+  .h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 2;
+  }
+  .h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2;
+  }
+  .h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2;
+  }
+  .list-item {
+    text-indent: 40px;
+  }
+}
+
+.index-page {
+  height: 100vh;
+  background-color: #e7f8ff;
+  padding: 40px;
+  .header {
+    margin-bottom: 40px;
+    .title {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 26px;
+    }
+  }
+  .session-list {
+    .session-item {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px 28px;
+      margin-bottom: 20px;
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .chat-num {
+        font-size: 24px;
+
+        color: #a6a6a6;
+      }
+    }
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 40px;
+    justify-content: flex-end;
+    .btn {
+      background-color: #fff;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+      .txt {
+        margin-left: 20px;
+      }
+    }
+  }
+}
